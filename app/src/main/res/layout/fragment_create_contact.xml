@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EFEF"
+    tools:context=".views.CreateContactFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/contact_pic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#D4E196"
+        android:src="@drawable/ic_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="First Name"
+        app:layout_constraintStart_toEndOf="@+id/contact_pic"
+        app:layout_constraintTop_toTopOf="@+id/contact_pic" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Last Name"
+        app:layout_constraintStart_toStartOf="@+id/first_name"
+        app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+    <EditText
+        android:id="@+id/work_place"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Work"
+        app:layout_constraintStart_toStartOf="@+id/last_name"
+        app:layout_constraintTop_toBottomOf="@+id/last_name" />
+
+    <EditText
+        android:id="@+id/phone_num1"
+        android:layout_width="381dp"
+        android:layout_height="51dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Mobile Number"
+        app:layout_constraintStart_toStartOf="@+id/contact_pic"
+        app:layout_constraintTop_toBottomOf="@+id/work_place" />
+
+    <EditText
+        android:id="@+id/phone_num2"
+        android:layout_width="381dp"
+        android:layout_height="51dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Phone Number"
+        app:layout_constraintStart_toStartOf="@+id/phone_num1"
+        app:layout_constraintTop_toBottomOf="@+id/phone_num1" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="381dp"
+        android:layout_height="51dp"
+        android:hint="Email"
+        app:layout_constraintStart_toStartOf="@+id/phone_num2"
+        app:layout_constraintTop_toBottomOf="@+id/phone_num2" />
+
+    <EditText
+        android:id="@+id/birth_date"
+        android:layout_width="381dp"
+        android:layout_height="51dp"
+        android:hint="Birthday"
+        app:layout_constraintStart_toStartOf="@+id/user_email"
+        app:layout_constraintTop_toBottomOf="@+id/user_email" />
+
+    <EditText
+        android:id="@+id/date_saved"
+        android:layout_width="381dp"
+        android:layout_height="51dp"
+        android:hint="Date"
+        app:layout_constraintStart_toStartOf="@+id/birth_date"
+        app:layout_constraintTop_toBottomOf="@+id/birth_date" />
+
+    <EditText
+        android:id="@+id/contact_relative"
+        android:layout_width="381dp"
+        android:layout_height="51dp"
+        android:hint="Related Persons"
+        app:layout_constraintStart_toStartOf="@+id/date_saved"
+        app:layout_constraintTop_toBottomOf="@+id/date_saved" />
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/save"
+        android:textColor="@color/secondaryDarkColor2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/contact_relative"
+        app:layout_constraintStart_toStartOf="@+id/contact_relative"
+        app:layout_constraintTop_toBottomOf="@+id/contact_relative" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

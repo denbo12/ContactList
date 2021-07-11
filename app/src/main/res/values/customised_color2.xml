@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor2">#d4e157</color>
+    <color name="primaryLightColor2">#ffff89</color>
+    <color name="primaryDarkColor2">#a0af22</color>
+    <color name="secondaryColor2">#827717</color>
+    <color name="secondaryLightColor2">#b4a647</color>
+    <color name="secondaryDarkColor2">#524c00</color>
+    <color name="primaryTextColor2">#000000</color>
+    <color name="secondaryTextColor2">#ffffff</color>
+    
+    <style name="circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>
